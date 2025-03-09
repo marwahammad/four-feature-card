@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(212, 6%, 44%, 0.05);
+}
+.poppins-extralight {
+  font-weight: 200;
+}
+.poppins-regular {
+  font-weight: 400;
+}
+.poppins-semibold {
+  font-weight: 600;
+}
+.font-size15 {
+  font-size: 0.9375rem;
+}
+.font-size30 {
+  font-size: 1.875rem;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.gray-color {
+  color: hsl(234, 12%, 34%);
+}
+.text-center {
+  text-align: center;
+}
+.para-width {
+  width: 40%;
+  margin: auto;
+}
+.padding-val10 {
+  padding-top: 0.625rem;
+}
+.padding-val30 {
+  padding-top: 1.875rem;
+}
+.bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+.card-decoration {
+  padding: 1.875rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.red-border {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.cyan-border {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+.orange-border {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.blue-border {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+.img-wrapper {
+  align-self: flex-end;
+}
+/**********************************************************************/
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". teambuilder ."
+    "supervisor teambuilder calculator"
+    "supervisor karma calculator"
+    ". karma .";
+}
+.supervisor {
+  grid-area: supervisor;
+}
+
+.teambuilder {
+  grid-area: teambuilder;
+}
+
+.karma {
+  grid-area: karma;
+}
+
+.calculator {
+  grid-area: calculator;
+}
