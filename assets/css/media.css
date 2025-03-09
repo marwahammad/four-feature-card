@@ -1,5 +1,8 @@
 /* !max-width 640px */
 @media screen and (max-width: 640px) {
+  .container{
+    width: 90%;
+  }
   .cards {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -47,8 +50,15 @@
 
 /* !min-width 1280px */
 @media screen and (min-width: 1280px) {
+  .container {
+    width: 80%;
+  }
 }
 
 /* !min-width 1536px */
 @media screen and (min-width: 1536px) {
+  .container {
+    width: 60%;
+  }
 }
+
